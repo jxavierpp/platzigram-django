@@ -13,7 +13,7 @@ def hello_word(request):
     now = datetime.now().strftime("%b %dth, %Y - %H:%M hrs")
     return HttpResponse("Oh, hi! Current server time is {now}".format(now=now))
 
-def hi(request):
+def sorted(request):
     """Hi"""
     numbers = [int(number) for number in request.GET['numbers'].split(",")]
     sorted_numbers = sorted(numbers)
